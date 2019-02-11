@@ -1,17 +1,18 @@
 # DistributedSystem2019
 ##Exercises
-0.  Make a server and a client.
+
+## 0.  Make a server and a client.
     Start the server on port 12345.
     Establish a client connection to it.
     The client should send a textual message on a line to the server.
     The server should send the line back, and the client should print it.
 
-1.  The server contains a string in the beginning.
+## 1.  The server contains a string in the beginning.
     The client should send a number (n) in textual form to the server.
     The server should print its string back n times on a line to the client.
     The client receives the server'r reply, then prints it on the standard output.
 
-2.  The client reads numbers from a file, and sends them to the server.
+## 2.  The client reads numbers from a file, and sends them to the server.
     After the last number, the client sends the text "end" to the server.
     The server applies the function f(n)=2*n+1 to all numbers,
     and sends them back to the client.
@@ -22,23 +23,23 @@
         Thus, the server never exits: it is always waiting for a client to connect,
         or is communicating with one.
 
-3.  The client sends a filename to the server.
+## 3.  The client sends a filename to the server.
     The server tries to open the file.
     If the file does not exist, the server replies with an error message.
     If the file exists, the server sends the lines of the file to the client.
 
-4.  The server keeps track of the number of clients.
+## 4.  The server keeps track of the number of clients.
     Whenever a client is connected, the server increases this number,
     sends it back to the client,
     then closes the connection and waits for the next client to come.
 
-5.  The server stores a number, which is initially 0.
+## 5.  The server stores a number, which is initially 0.
     After connection, the current client sends some numbers, then the text "exit".
     For each number sent, the server adds the number to its internal counter,
     and sends the increased value back to the client.
     When the client exits, the server starts waiting for the next client.
 
-6.  The server waits for two connections on the same port.
+## 6.  The server waits for two connections on the same port.
     After they both have arrived, they send their names on one line.
     After that, they start exchanging messages in the following way.
     First, client 1 sends a message to the server, and the server sends this message on to client 2.
