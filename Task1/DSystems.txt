@@ -1,0 +1,10 @@
+public class Server{
+ public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+	port = 12345;
+	host = "localhost";
+	
+ 
+ }
+
+}
