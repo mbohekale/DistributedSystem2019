@@ -1,0 +1,28 @@
+Topics for midterm (chapter 1,2,3):
+
+1. Introduction
+
+Definition
+Transparency types
+Scaling and scaling techniques
+Types of distributed systems
+Transactions
+Pervesive systems
+Ubiquitous systems
+
+2. Architectures
+
+Architectural styles
+Software architectures
+Architectures versus middleware
+Self-management in distributed systems
+
+3. Processes
+
+Threads
+Virtualization
+Server-client model
+Server states
+(skip the experiments)
+Code migration
+Mobility types
