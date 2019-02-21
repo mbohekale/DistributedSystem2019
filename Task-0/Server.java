@@ -1,24 +1,31 @@
-import java.util.*;
 import java.net.*;
-import java.util.Scanner;
 import java.io.*;
-public class Server{
- public static void main(String[] args)throws Exception{
-  
-		String text;
-	 ServerSocket s1 = new ServerSocket(12345);
-		Socket ss = s1.accept();
-		System.out.println("Connected.......");
-	 	Scanner sc = new Scanner(ss.getInputStream());
-		text = sc.nextLine();
-		String temp = text;
+import java.util.*;
+public class Server
+{
+	public static void main(String[] args)throws Exception{
+		try{
+		int number;
+			
+		int port=12345;
+		ServerSocket ss = new ServerSocket(port);
+		Socket s = ss.accept();
+		System.out.println("Server is connected........");
 		
-		PrintStream p = new PrintStream(ss.getOutputStream());
-		p.println(temp); 
+		Scanner sc = new Scanner(s.getInputStream());
+		number=sc.nextInt();
+		int temp= number*5;
 		
-	
-	
- 
- }
-
+		PrintWriter pw = new PrintWriter(s.getOutputStream());
+		pw.println(temp);
+		pw.flush();		
+		
+		
+		
+		
+		
+		}catch(IOException e){
+		System.out.println(e);
+		}
+	}
 }
