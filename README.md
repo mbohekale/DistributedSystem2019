@@ -37,6 +37,7 @@
     After connection, the current client sends some numbers, then the text "exit".
     For each number sent, the server adds the number to its internal counter,
     and sends the increased value back to the client.
+    
     When the client exits, the server starts waiting for the next client.
 
 ## 6.  The server waits for two connections on the same port.
@@ -54,3 +55,4 @@
     The server connects all clients in order, and receives a message from all of them.
     When the clients have sent all their lines,
     the server sends all messages (along with the name of the sending client) to all clients.
+    end
