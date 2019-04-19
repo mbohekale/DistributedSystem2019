@@ -1,0 +1,4 @@
+public clas Server{
+	public static void main(String[] args){}
+
+}
